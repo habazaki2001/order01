@@ -54,8 +54,8 @@ $(window).bind('load', function () {
           centerMode: false,
           Swipe: true,
           slidesToShow: 1,
-          // speed: 1000,
-          // autoplay: true,
+          speed: 1000,
+          autoplay: true,
           autoplaySpeed: 6000,
           pauseOnFocus: true
         }
@@ -68,8 +68,8 @@ $(window).bind('load', function () {
           centerMode: false,
           Swipe: true,
           slidesToShow: 1,
-          // speed: 1000,
-          // autoplay: true,
+          speed: 1000,
+          autoplay: true,
           autoplaySpeed: 6000,
           pauseOnFocus: true
         }
