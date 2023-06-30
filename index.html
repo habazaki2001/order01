@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=-100" />
+        <meta name="format-detection" content="telephone=no" />
+        <title></title>
+        <meta name="keywords" content />
+        <meta name="description" content />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <!-- FAVICON -->
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/site.webmanifest">
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" media="all" href="./css/slick.css" />
+        <link rel="stylesheet" media="all" href="./css/slick-theme.css" />
+        <link rel="stylesheet" media="all" href="./css/twentytwenty.css" />
+
+        <link rel="stylesheet" media="all" href="./css/styles.css" />
+        <link rel="stylesheet" media="all" href="./css/responsive.css" />
+        <script src="./js/jquery.js"></script>
+
+        <!-- Google Analytics start -->
+        <!-- Google Analytics end -->
+
+        <!-- JSON BREADCRUMBS -->
+        <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": "link_domain"
+    }]
+}
+</script>
+    </head>
+
+    <body id="index">
+        <div id="wrapper">
+            <header>
+                <div class="h_box">
+                    <div class="inner h_inner">
+                        <!-- Header Content -->
+                        <div class="h_left flex_between">
+                            <h1>大東・四条畷の外壁塗装とリフォーム専門店</h1>
+                            <p id="logo">
+                                <a href="https://www.kobaken-protimes.com">
+                                    <img src="./images/logo.png"
+                                        alt="大東・四条畷の外壁塗装とリフォーム専門店" width="302">
+                                </a>
+                            </p>
+                            <span><img src="./images/h_box_img01.jpg"
+                                    alt="No.1"></span>
+                        </div>
+                        <div class="h_right">
+                            <div class="h_contact pc">
+                                <div class="h_contact_tel">
+                                    <a class="tel sweetlink"
+                                        href="tel:0728135412">072-813-5412</a>
+                                    <span class="time">受付 9:00 &#126;19:00</span>
+                                    <span class="wrap_icon">
+                                        <a class="flex_center" target="_blank"
+                                            href="https://twitter.com/kobakenradio?s=11"><img
+                                                src="./images/ic_twiter.png"
+                                                alt="social のコピー"></a>
+                                        <a class="flex_center"
+                                            href="https://www.instagram.com/kobaken108/"
+                                            target="_blank"><img
+                                                src="./images/ic_ins.png"
+                                                alt="social のコピー"></a>
+                                        <a class="flex_center"
+                                            href="https://page.line.me/783mjrkg?openQrModal=true"
+                                            target="_blank"><img
+                                                width="24px" height="24px"
+                                                src="./images/ic_line.png"
+                                                alt="social のコピー"></a>
+                                    </span>
+                                </div>
+                                <p class="h_contact_mail">
+                                    <a href="#contact">
+                                        <span class="text_big">メールフォーム<span
+                                                class="dif">で</span><br>
+                                            お問い合わせ
+                                        </span>
+                                        <span class="text_small flex_center">24時間受付中！</span>
+                                    </a>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <a class="sub_logo" href="#">
+                            <img src="./images/h_box_img02.png" alt="protimes">
+                        </a>
+
+                    </div>
+                    <div class="menu pc">
+                        <div class="inner">
+                            <ul class="menu_list">
+
+                                <li><a href="/advantage/">小林建装の強み</a></li>
+                                <li class="parent">
+                                    <a>工事について</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="/service/">サービス一覧</a></li>
+                                            <li><a href="/flow/">施工の流れ</a></li>
+                                            <li><a href="/rain/">雨漏りについて</a></li>
+                                            <li><a href="/after/">保証・アフターメンテナンス</a></li>
+                                            <li><a href="/qa/">塗料について</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="/price/">料金案内</a></li>
+                                <li><a href="/case/">施工事例</a></li>
+                                <li class="parent">
+                                    <a>お役立ち情報 </a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="/service/">サービス一覧</a></li>
+                                            <li><a href="/flow/">施工の流れ</a></li>
+                                            <li><a href="/rain/">雨漏りについて</a></li>
+                                            <li><a href="/after/">保証・アフターメンテナンス</a></li>
+                                            <li><a href="/qa/">塗料について</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="parent">
+                                    <a>会社紹介</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="/service/">サービス一覧</a></li>
+                                            <li><a href="/flow/">施工の流れ</a></li>
+                                            <li><a href="/rain/">雨漏りについて</a></li>
+                                            <li><a href="/after/">保証・アフターメンテナンス</a></li>
+                                            <li><a href="/qa/">塗料について</a></li>
+                                        </ul>
+                                    </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Hamburger Menu -->
+                    <div class="hamburger hamburger--3dxy">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="id_nav">
+                    <div class="content">
+                        <div class="nav_block">
+                            <p class="dif">
+                                <img src="./images/logo.png" alt="logo">
+                            </p>
+                            <ul class="nav_list">
+                                <li>
+                                    <a href="#">Top</a>
+                                </li>
+                                <li>
+                                    <a href="/advantage/">小林建装の強み</a>
+                                </li>
+                                <li class="parent">
+                                    <a class="dropdownlink">工事について</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="/service/">サービス一覧</a></li>
+                                            <li><a href="/flow/">施工の流れ</a></li>
+                                            <li><a href="/rain/">雨漏りについて</a></li>
+                                            <li><a href="/after/">保証・アフターメンテナンス</a></li>
+                                            <li><a href="/qa/">塗料について</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/price/">料金案内</a></li>
+                                <li>
+                                    <a href="/case/">施工事例 </a>
+                                </li>
+                                <li class="parent">
+                                    <a class="dropdownlink">お役立ち情報</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="/service/">サービス一覧</a></li>
+                                            <li><a href="/flow/">施工の流れ</a></li>
+                                            <li><a href="/rain/">雨漏りについて</a></li>
+                                            <li><a href="/after/">保証・アフターメンテナンス</a></li>
+                                            <li><a href="/qa/">塗料について</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="parent">
+                                    <a class="dropdownlink">施工の 流れ</a>
+                                    <div class="sub">
+                                        <ul>
+                                            <li><a href="/service/">サービス一覧</a></li>
+                                            <li><a href="/flow/">施工の流れ</a></li>
+                                            <li><a href="/rain/">雨漏りについて</a></li>
+                                            <li><a href="/after/">保証・アフターメンテナンス</a></li>
+                                            <li><a href="/qa/">塗料について</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pic">
+                                    <span class="pic_sub sub1">
+                                        <img src="./images/nav_img06.png"
+                                            alt="施工の流れ">
+                                    </span>
+                                    <span class="pic_sub sub2">
+                                        <img src="./images/nav_img07.png"
+                                            alt="よくあるご質問">
+                                    </span>
+                                    <span class="pic_sub sub3">
+                                        <img src="./images/nav_img08.png"
+                                            alt="見積もり用語集">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </span>
+                </nav>
+            </header>
+            <!-- end #header-->
+            <!-- Nav Menu -->
+
+            <main>
+                <!-- MainVisual start -->
+                <section class="mv">
+                    <div class="mv_content">
+                        <div class="mv_bg">
+                            <ul class="main_slider">
+                                <li class=" slide_item">
+                                    <img src="./images/main_visual_img01.jpg"
+                                        alt="No.1">
+
+                                </li>
+                                <li class="slide_item">
+                                    <img src="./images/main_visual_img02.jpg"
+                                        alt="雨漏り診断・修繕">
+                                    <span class="btn"><a href="#">詳しくはこちら</a></span>
+                                </li>
+                                <li class="slide_item">
+                                    <img src="./images/main_visual_img03.jpg"
+                                        alt="外壁塗装・ リフォーム専門店">
+                                    <span class="btn"><a href="#">詳しくはこちら</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mv_txt">
+                            <span>
+                                <img src="./images/main_visual_img04.jpg"
+                                    alt=" 知って得する！ 見積もり用語15選">
+                            </span>
+                            <a href="#" class="flex_col mv_txt_link">
+                                <span class="num">2023.06.07</span>
+                                <span class="ja">
+                                    知って得する！<br>
+                                    見積もり用語15選
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- MainVisual end -->
+
+                <!-- SECTION 1 start -->
+                <section class="sec01">
+                    <div class="inner flex_col_center">
+                        <h3 class="sec01_pic">
+                            <span class="wrap_text">
+                                <span class="text"> 認めた！</span>
+                                <span class="text text_dif">一級建築士<span> が</span></span>
+                            </span>
+                            <img src="./images/sec01_img07.png" alt="一級建築士が認めた！">
+                        </h3>
+                        <ul>
+                            <li class="item_dif">
+                                <span class="vlr"><span>プロタイム</span>ズ大東店</span>
+                                <span class="f_big vlr">小林建装</span>
+                                <span class="text_dif">は</span>
+                            </li>
+                            <li class="item flex_center">
+                                <span class="text">
+                                    <span class="char">「</span><span class="dif">信頼</span>できる<span
+                                        class="char">」</span>
+                                </span>
+                            </li>
+                            <li class="item flex_center">
+                                <span class="text">
+                                    <span class="char">「</span><span class="dif">信用</span>できる<span
+                                        class="dif">雨漏り業者</span><span
+                                        class="char">」</span>
+                                </span>
+                            </li>
+                            <li class="item flex_center">
+                                <span class="text">
+                                    <span class="char">「</span><span class="dif">リフォーム</span>する際に<span
+                                        class="dif">推奨</span>する<span
+                                        class="char">」</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- SECTION 1 end -->
+
+                <!-- SECTION 2 start -->
+                <section class="sec02">
+                    <div class="inner">
+                        <h3 class="title flex_center">
+                            <span class="left flex_center">
+                                <span class="f_big">
+                                    小林建装
+                                </span>
+                                <span class="text">
+                                    が評価<br>
+                                    され続ける
+                                </span>
+                            </span>
+                            <span class="right">
+                                <span class="num">
+                                    12
+                                </span>
+                                <span class="text">
+                                    の
+                                    <span class="f_big">理由</span>
+                                </span>
+                            </span>
+                        </h3>
+                    </div>
+                </section>
+                <!-- SECTION 2 end -->
+
+                <!-- SECTION 3 start -->
+                <section class="sec03">
+                    <div class="inner flex_col_center">
+                        <span class="pic">
+                            <span class="block bl_01">
+                                <a href="/advantage/"><img
+                                        src="./images/sec03_img01.png"
+                                        alt="大阪府知事 許可取得済"></a>
+                                <span>
+                                    <a href="/advantage/"><img
+                                            src="./images/sec03_img02.png"
+                                            alt="自社施工なので 安くて高品質"></a>
+                                    <a href="/advantage/"><img
+                                            src="./images/sec03_img03.png"
+                                            alt="NOを言わない会社"></a>
+                                </span>
+                                <a href="/advantage/"><img
+                                        src="./images/sec03_img04.png"
+                                        alt="地域最安値他社さんより 安くいたします "></a>
+                            </span>
+                            <span class="block bl_02">
+                                <span>
+                                    <a class="pic_05" href="/advantage/"><img
+                                            src="./images/sec03_img05.png"
+                                            alt="優良施工店の 工事保証塗料メーカーの 工事保証"></a>
+                                    <span class="dif">
+                                        <a href="/advantage/"><img
+                                                src="./images/sec03_img07.png"
+                                                alt="法人対応 実績多数大規模修繕の 基準をクリア"></a>
+                                        <a href="/advantage/"><img
+                                                src="./images/sec03_img08.png"
+                                                alt="書面で徹底的に記録を残し わかりやすく細かなご報告"></a>
+                                    </span>
+                                </span>
+                                <a href="/advantage/"><img
+                                        src="./images/sec03_img06.png"
+                                        alt="令和4年度施工実績累計相談実績　累計相談実績　"></a>
+
+                            </span>
+                            <span class="block bl_03">
+                                <span>
+                                    <a href="/advantage/"><img
+                                            src="./images/sec03_img09.png"
+                                            alt="カラー シミュレーション 632色から選べる"></a>
+                                    <a href="/advantage/"><img
+                                            src="./images/sec03_img11.png"
+                                            alt="ショールームで 体感！"></a>
+                                </span>
+                                <span>
+
+                                    <a href="/advantage/"><img
+                                            src="./images/sec03_img10.png"
+                                            alt="新築のような お住まいに"></a>
+                                    <a href="/advantage/"><img
+                                            src="./images/sec03_img12.png"
+                                            alt="国家資格者多数在籍ITシステムで品質管理"></a>
+                                </span>
+                            </span>
+                        </span>
+
+                    </span>
+                    <span class="btn"><a href="/advantage/">まとめて確認する</a></span>
+                </div>
+            </section>
+            <!-- SECTION 3 end -->
+
+            <!-- SECTION 4 start -->
+            <section class="sec04">
+                <div class="sec04_content">
+                    <div class="inner">
+                        <h3 class="title">
+                            <span class="ja">施工事例</span>
+                        </h3>
+                    </div>
+                    <div class="slider">
+                        <div class="item ">
+                            <div class="flex_col_center">
+                                <p class="top">
+                                    <span>外壁工事</span>
+                                    <a href="#">外壁の色味・材質変更</a>
+                                </p>
+                                <div class="pic before_after">
+                                    <img src="./images/sec04_item01.jpg"
+                                        alt="外壁の色味・材質変更">
+                                    <img src="./images/sec04_item01_1.jpg"
+                                        alt="外壁の色味・材質変更">
+                                </div>
+                                <p class="content flex_center">
+                                    <span class="text left">
+                                        〇〇市〇〇町<br>
+                                        ×××様
+                                    </span>
+                                    <span class="text right">
+                                        屋根と同じく、老朽化が目立っていたため見...
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="flex_col_center">
+                                <p class="top">
+                                    <span>外壁工事</span>
+                                    <a href="#">外壁の色味・材質変更</a>
+                                </p>
+                                <div class="pic before_after">
+                                    <img src="./images/sec04_item01.jpg"
+                                        alt="外壁の色味・材質変更">
+                                    <img src="./images/sec04_item01_1.jpg"
+                                        alt="外壁の色味・材質変更">
+                                </div>
+                                <p class="content flex_center">
+                                    <span class="text left">
+                                        〇〇市〇〇町<br>
+                                        ×××様
+                                    </span>
+                                    <span class="text right">
+                                        屋根と同じく、老朽化が目立っていたため見...
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="flex_col_center">
+                                <p class="top">
+                                    <span>外壁工事</span>
+                                    <a href="#">外壁の色味・材質変更</a>
+                                </p>
+                                <div class="pic before_after">
+                                    <img src="./images/sec04_item01.jpg"
+                                        alt="外壁の色味・材質変更">
+                                    <img src="./images/sec04_item01_1.jpg"
+                                        alt="外壁の色味・材質変更">
+                                </div>
+                                <p class="content flex_center">
+                                    <span class="text left">
+                                        〇〇市〇〇町<br>
+                                        ×××様
+                                    </span>
+                                    <span class="text right">
+                                        屋根と同じく、老朽化が目立っていたため見...
+                                    </span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <span class="btn sec04_btn"><a href="/case/">施工事例をもっと見る</a></span>
+                </div>
+
+            </section>
+            <!-- SECTION 4 end -->
+
+            <!-- SECTION 5 start -->
+            <section class="sec05">
+                <div class="content">
+                    <div class="inner">
+                        <div class="block">
+                            <h3 class="title flex_center">
+                                <span class="ja flex_center">サ</span>
+                                <span class="ja flex_center">ー</span>
+                                <span class="ja flex_center">ビ</span>
+                                <span class="ja flex_center">ス</span>
+                            </h3>
+                            <ul class>
+                                <li class>
+                                    <a href="/service/" class="flex_col">
+                                        <span class="pic"></span>
+                                        <span class="bottom">
+                                            <span class="text">
+                                                <span class="ja flex_center">外壁工事</span>
+                                                <span class="num">48</span>万円～
+                                            </span>
+                                            <span class="dect">
+                                                建物の劣化具合を丁寧に診断し、最適な塗り<br>
+                                                替え・修繕をご提案
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a href="/service/" class="flex_col">
+                                        <span class="pic"></span>
+                                        <span class="bottom">
+                                            <span class="text">
+                                                <span class="ja flex_center">屋根工事</span>
+                                                <span class="num ml">16</span>万円～
+                                            </span>
+                                            <span class="dect">
+                                                徹底した高圧洗浄や下地処理など、見えない<br>
+                                                部分にもこだわって施工
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a href="/service/" class="flex_col">
+                                        <span class="pic"></span>
+                                        <span class="bottom">
+                                            <span class="text">
+                                                <span class="ja flex_center">防水工事</span>
+                                                <span class="num">9</span>万円～
+                                            </span>
+                                            <span class="dect">
+                                                雨漏りの修繕後にそのままリフォーム工事も
+                                                一括で対応
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 5 end -->
+            <!-- SECTION 6 start -->
+            <section class="sec06">
+                <div class="inner">
+                    <a href="/service/" class="flex_center block">
+                        <span class="pic"> </span>
+                        <p class="title">
+                            <span class=" content flex_col_center">
+                                <span class="top">
+                                    その工事、<span>間違っているかも...</span>
+                                </span>
+                                <span class="bottom">
+                                    <span>無料住宅診断</span>
+                                    で悔いのない選択を！
+                                </span>
+                            </span>
+                        </p>
+                    </a>
+                    <p class="dect">
+                        「屋根に穴が空いた！」こういうとき、どんな工事が必要になるのでしょうか...?<br>
+                        葺き替え？カバー工法？<br>
+                        どちらにせよ、「業者さんに言われたから...」と鵜呑みにするのは危険です！
+                        どうしてその工事が必要なのか？理由が重要です！<br>
+                        しっかりと診断を聞いてみてから、どのような工事が最適かご判断ください！<br>
+                    </p>
+                    <a href="/rain/" class="flex_center block block02">
+                        <span class="pic"> </span>
+                        <p class="title">
+                            <span class=" content flex_col_center">
+                                <span class="top">
+                                    <span>急な台風や大雨のトラブル</span> もおまかせ！
+                                </span>
+                                <span class="bottom">
+                                    <span>雨漏り診断・修繕</span>
+                                </span>
+                            </span>
+                        </p>
+                    </a>
+                    <p class="dect">
+                        急な雨漏りで困った時には、すぐにお電話ください。<br>
+                        雨漏り解決率は100％！ 雨漏りの被害が止まるまでしっかりサポートします。<br>
+                        雨漏りの原因は、壁・屋根のほかサッシ枠のすき間ということもあります。<br>
+                        原因を見落とすような業者に依頼しないよう、雨漏り修繕は料金の安さだけで選ばないようにしましょう。<br>
+                    </p>
+                    <div class="wrap_btn flex_center">
+                        <span class="btn">
+                            <a href="/service/">サービス一覧</a>
+                        </span>
+                        <span class="btn">
+                            <a href="/price/">料金目安</a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 6 end -->
+            <!-- SECTION 7 start -->
+            <section class="sec07">
+                <div class="sec07_content">
+                    <div class="inner">
+                        <h3 class="title">
+                            <span class="ja">塗料</span>
+                        </h3>
+                    </div>
+                    <div class="slider">
+                        <div class="item">
+                            <img src="./images/sec07_img03.jpg" alt="エコボロン">
+                        </div>
+                        <div class="item">
+                            <img src="./images/sec07_img04.jpg"
+                                alt="エスケー プレミアムシリコン">
+                        </div>
+                        <div class="item">
+                            <img src="./images/sec07_img05.jpg"
+                                alt="イオニアミストPRO">
+                        </div>
+                        <div class="item">
+                            <img src="./images/sec07_img06.jpg" alt="ボンフロン">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 7 end -->
+            <!-- SECTION 8 start -->
+            <section class="sec08">
+                <div class="inner">
+                    <div class="top">
+                        <h3 class="top_l title flex_col">
+                            <span class="ja">
+                                外壁塗装
+                                <span>と</span>
+                                塗料
+                                <span>の</span>
+                            </span>
+                            <span class="content">
+                                <span class="t_white flex_center">基</span>
+                                <span class="flex_center">礎</span>
+                                <span class="t_white flex_center">知</span>
+                                <span class="flex_center">識</span>
+                            </span>
+                            <span class="dect flex_center">
+                                <span>
+                                    初めて外壁・屋根の塗り替えを<br>
+                                    検討しているという方は、まずはこちら！ <br>
+                                    塗り替えの基礎知識を押さえておきましょう。<br>
+                                </span>
+                            </span>
+                        </h3>
+                        <p class="top_r">
+                            <span class="pic"></span>
+                        </p>
+                    </div>
+                    <div class="bottom flex_col_center">
+                        <p class="info flex_between">
+                            <a href="/painter/" class="box left flex_between">
+                                <span class="text"> 塗装の<span>タイミング</span></span>
+                            </a>
+                            <a href="/timing/" class="box right flex_between">
+                                <span class="text"> 塗装業者の<span>選び方</span></span>
+                            </a>
+                        </p>
+                        <span class="btn"><a href="/qa/">他の外壁塗装知識はこちら</a></span>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 8 end -->
+            <!-- SECTION 9 start -->
+            <section class="sec09">
+                <div class="inner flex_col_center">
+                    <h3 class="title">
+                        <span class="ja">
+                            大東市・四条畷のお家のプロフェッショナル<br>
+                            <span class="f_big"><span>小林建装</span>です</span>
+                        </span>
+                        <span class="dect">
+                            大東市や東大阪市で外壁塗装や屋根塗装をお考えの方へ、家はメンテナンスによって寿命が大きく変わります。定期的に塗り替えることで、大切な家の寿命を延ばすことが可能になるのです。<br>
+                            一見きれいに見える家でも、時間経過とともに劣化が進んでいっています。定期的なメンテナンスがなされていないと、台風や集中豪雨などの大きな災害が起こったときには、雨漏りの被害を受けることになってしまうのです。そうなる前に、少しでも気になる症状が出てきたら、ぜひとも小林建装にご相談ください。
+                        </span>
+                        <span class="pic">
+                            <img src="./images/sec09_img04.png"
+                                alt="大東市・四条畷のお家のプロフェッショナル 小林建装です">
+                        </span>
+                    </h3>
+                    <p class="content flex_between">
+                        <span class="text">
+                            Media
+                        </span>
+                        <span class="video">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/8cHwVvApxCc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </span>
+                        <img class="pic" src="./images/sec09_img05.jpg"
+                            alt="大東市・四条畷のお家のプロフェッショナル 小林建装です">
+                        <img class="pic" src="./images/sec09_img06.jpg"
+                            alt="media">
+                    </p>
+                    <span class="btn"><a href="/company/">会社概要</a></span>
+                </div>
+            </section>
+            <!-- SECTION 9 end -->
+            <!-- SECTION 10 start -->
+            <section class="sec10">
+                <div class="inner">
+                    <a href="/after/"></a>
+                </div>
+            </section>
+            <!-- SECTION 10 end -->
+         
+            <!-- end #main-->
+
+            <footer>
+                   <!-- SECTION 11 start -->
+            <section class="sec11">
+                <div class="inner flex_between">
+                    <p class="left tel">
+                            <a class="sweetlink" href="tel:0728135412">
+                                072-813-5412
+                            <span class="time sp">受付 9:00～19:00</span>
+                            </a><br>
+                            <span class="time pc">受付 9:00～19:00</span>
+                    </p>
+                    <div class="right flex_between">
+                        <p class="info">
+                            <span>無料</span>ご相談<br>
+                            査定依頼
+                        </p>
+                        <p class="block mail flex_center">
+                            <a href="#contact" class="flex_col_center">
+                                <span class="text flex_center">
+                                    <span>
+                                        メールフォーム<span class="f_small">で</span><br>
+                                        お問い合わせ
+                                    </span>
+                                </span>
+                                <span class="sub_text">
+                                    24時間受付中！
+                                </span>
+                            </a>
+                        </p>
+                        <p class="block line flex_center">
+                            <a target="_blank" href="https://page.line.me/783mjrkg?openQrModal=true">
+                                <span class="text flex_center">
+                                    <span>
+                                        <span class="f_big">LINE</span><span
+                                            class="f_small">での</span><br>
+                                        お問い合わせ
+                                    </span>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 11 end -->
+                <!-- FOOTER TOP -->
+                <section class="ft_content">
+                    <div class="inner">
+                        <div class="ft_top ">
+                            <div class="ft_info">
+                                <p class="ft_info_logo">
+                                    <a href="https://www.kobaken-protimes.com">
+                                        <img src="./images/ft_logo.png"
+                                            alt="大東・四条畷の外壁塗装とリフォーム専門店">
+                                    </a>
+                                    <span class="wrap_icon">
+                                        <a class="flex_center" target="_blank"
+                                            href="https://twitter.com/kobakenradio?s=11"><img
+                                                src="./images/ic_twiter.png"
+                                                alt="social のコピー"></a>
+                                        <a class="flex_center"
+                                            href="https://www.instagram.com/kobaken108/"
+                                            target="_blank"><img
+                                                src="./images/ic_ins.png"
+                                                alt="social のコピー"></a>
+                                        <a class="flex_center"
+                                            href="https://page.line.me/783mjrkg?openQrModal=true"
+                                            target="_blank"><img
+                                                width="24px" height="24px"
+                                                src="./images/ic_line.png"
+                                                alt="social のコピー"></a>
+
+                                    </span>
+                                </p>
+                                <p class="ft_info_add">〒574-0055
+                                    大阪府大東市新田本町2-33</p>
+                            </div>
+                            <div class="ft_map">
+                                <div class="ft_map_iframe">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9243172315973!2d135.605651!3d34.7070888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011fe49ccad61f%3A0x73ad7679b7873ff!2z5pel5pys44CB44CSNTc0LTAwNTUg5aSn6Ziq5bqc5aSn5p2x5biC5paw55Sw5pys55S677yS4oiS77yT77yT!5e0!3m2!1sja!2s!4v1687432020328!5m2!1sja!2s"
+                                        width="600" height="450"
+                                        style="border:0;" allowfullscreen
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="ft_link pc">
+                            <ul class="list">
+                                <li class="title"><a class="ja" target="_blank" href="https://www.kobaken-protimes.com">トップページ</a></li>
+                                <li class="row">
+                                    <ul class="col_6">
+                                        <li class="big"><p>工事について</p></li>
+                                        <li><a href="/service/">サービス一覧</a></li>
+                                        <li><a href="/flow/">施工の流れ</a></li>
+                                        <li><a href="/rain/">雨漏りについて</a></li>
+                                        <li><a href="/after/">保証・アフターメンテナンス</a></li>
+                                        <li><a href="/qa/">塗料について</a></li>
+                                    </ul>
+                                    <ul class="col_6 p_50">
+                                        <li class="big"><p>お役立ち情報</p></li>
+                                        <li><a href="/timing/">塗装のタイミング</a></li>
+                                        <li><a href="/painter/">塗装業者の選び方</a></li>
+                                        <li><a href="/qa/">よくあるご質問</a></li>
+                                        <li><a href="/qa/">見積用語集</a></li>
+                                    </ul>
+                                </li>
+                                <li class="row">
+                                    <ul class="col_6">
+                                        <li class="big"><p>会社紹介</p></li>
+                                        <li><a href="/advantage/">代表挨拶</a></li>
+                                        <li><a href="/company/">会社・ショールーム情報</a></li>
+                                        <li><a href="/company/">スタッフ紹介</a></li>
+                                        <li><a href="#">オフィシャルブログ</a></li>
+                                    </ul>
+                                    <ul class="col_6 p_50">
+                                        <li><a href="/advantage/">小林建装の強み</a></li>
+                                        <li><a href="/price/">料金案内 </a></li>
+                                        <li><a href="/case/">施工事例</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="ft_img">
+                            <span class="pic_01">
+                                <a target="_blank" href="https://www.kobaken.website/">オフィシャルサイト</a>
+                            </span>
+                            <span class="pic_02">
+                                <a target="_blank" href="https://www.kobaken.pro/">リフォームサイト</a>
+                            </span>
+                        </div>
+                        <address>
+                            &copy;2023 小林建装株式会社.
+                    </address>
+                    </div>
+                </section>
+
+                <!-- FOOTER LINK -->
+
+              
+
+             
+            </footer>
+
+            <p class="to_top"></p>
+            <!-- end #footer -->
+        </div>
+        <script src="./js/jquery.event.move.js"></script>
+        <script src="./js/jquery.twentytwenty.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/sweetlink.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/top.js"></script>
+    </body>
+
+</html>
