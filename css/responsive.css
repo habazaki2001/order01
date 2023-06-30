@@ -8,7 +8,7 @@
     }
 
     .sp {
-        display: none
+        display: none !important;
     }
 
     /* nav */
@@ -394,10 +394,18 @@
         right: 0;
     }
 
-    .sec05 .content {
+    .sec05 .block {
         padding: 0 15px 73px;
         margin: 0;
         width: 100%;
+    }
+        
+    .sec05 .block .title::before {
+        content: url(../images/sec05_service.png);
+        position: absolute;
+        z-index: 1;
+        right: 289px;
+        bottom: -38px;
     }
 
 
@@ -442,6 +450,7 @@
     .sec06 .block.block02 .title {
         left: 0;
     }
+
 
     .sec08 .top_r .pic::before {
         top: -80px;
@@ -940,8 +949,15 @@
     }
 
     .sec04 .title {
-        background-position-y: 31px;
-        background-position-x: -107px;
+        background-position-y: 0px;
+        background-position-x: calc(50% + 38px);
+        background-size: 600px;
+        padding-bottom: 58px;
+        padding-top: 40px;
+    }
+    .sec04 .title .ja::before {
+        top: 50px;
+        transform: scale(.7);
     }
 
     .sec04 .slick-slide {
@@ -957,7 +973,7 @@
     }
 
     .sec04 .slider {
-        top: -60px;
+        top: -5px;
     }
 
 
@@ -1077,49 +1093,58 @@
         left: 135px;
     }
 
-    .sec05 .content {
+    .sec05 .block {
         z-index: 2;
         width: 100%;
-        padding: 0;
+        padding: 0 0 80px 0;
         margin: 0;
     }
 
-    .sec05 .content::before,
-    .sec05 .content::after {
+    .sec05 .block::before,
+    .sec05 .block::after {
         top: -25px;
         transform: scale(.8);
     }
 
-    .sec05 .content::before {
+    .sec05 .block::before {
         left: 0px;
     }
 
-    .sec05 .content::after {
+    .sec05 .block::after {
         right: 0px;
     }
 
-    .sec05 .content .title {
+    .sec05 .block .title {
         top: -35px;
         left: 10px;
     }
 
-    .sec05 .content .title::before {
-        right: -18px;
-        bottom: -51px;
-        transform: scale(.7);
+    
+    .sec05 .block .title::before {
+        display: none;
     }
 
-    .sec05 .content .title .ja {
+
+
+    .sec05 .block .title .ja {
         font-size: 50px;
         width: 70px;
         height: 70px;
         margin-right: 20px;
     }
 
-    .sec05 .content .title .ja::before {
+    .sec05 .block .title .ja::before {
         right: 0px;
         bottom: 0px;
         z-index: -1;
+        transform: scale(.7);
+    }
+    .sec05 .block .ja.dif::after {
+        content: url(../images/sec05_service.png);
+        position: absolute;
+        z-index: 1;
+        right: -90px;
+        bottom: -62px;
         transform: scale(.7);
     }
 
@@ -1139,11 +1164,10 @@
     .sec05 ul li .bottom {
         padding: 0 8px;
         width: 100%;
+        align-items: center;
     }
 
-    .sec05 ul li a .pic {
-        width: 100%;
-    }
+
 
     .sec05 ul li .bottom .dect {
         font-size: 16px;
@@ -1157,6 +1181,20 @@
 
     /* sec06 */
     /* sec07 */
+    .sec07 .title img {
+        margin-right: 10px;
+         width: 100px;
+    }
+    .sec07 .title .ja {
+        left: 0;
+        font-size: 60px;
+    }
+    .sec07 .title .ja::after {
+        right: -54px;
+        bottom: -56px;
+        transform: scale(.7);
+    }
+
     /* sec08 */
 
     /*============ FOOTER ============*/
@@ -1463,6 +1501,15 @@
         font-size: 25px;
     }
 
+    .sec04 .title {
+        background-size: 560px;
+        padding-bottom: 58px;
+        padding-top: 32px;
+    }
+    .sec04 .slider {
+        top: -25px;
+    }
+
     .sec04 .item>div {
         margin: 0px 10px 10px 10px;
     }
@@ -1470,6 +1517,10 @@
     .sec04 .item .pic {
         width: 350px;
     }
+    .sec05 .block .ja.dif::after {
+        right: -34px;
+    }
+
 
     .ft_img {
         flex-wrap: wrap;
