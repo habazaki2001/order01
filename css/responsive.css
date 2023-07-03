@@ -550,6 +550,7 @@
     }
 }
 
+
 /* screen-min:750px */
 @media screen and (max-width: 750px) {
     img {
@@ -584,6 +585,10 @@
 
     .title .ja {
         font-size: 50px;
+    }
+
+    .inner {
+        padding: 0 10px;
     }
 
     /* NAV */
@@ -834,7 +839,7 @@
     /* sec01 */
 
     .sec01 .inner {
-        padding: 50px 0 316px;
+        padding: 50px 10px 316px;
     }
 
     .sec01 .inner::before {
@@ -1122,6 +1127,10 @@
         top: -108px;
     }
 
+    .sec05 .inner {
+        padding: 0;
+    }
+
     .sec05 .inner::before,
     .sec05 .inner::after {
         position: absolute;
@@ -1229,6 +1238,7 @@
     .sec06 .inner {
         padding: 50px 10px 50px;
     }
+
     .sec06 .block {
         justify-content: center;
         flex-direction: column;
@@ -1282,13 +1292,15 @@
     .sec06 .dect {
         margin: 50px 0 50px;
     }
+
     .sec06 .wrap_btn {
         margin-top: 0px;
         flex-direction: column;
     }
+
     .sec06 .wrap_btn .btn {
-         margin-right: 0;
-         margin-bottom: 20px;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     /* sec07 */
@@ -1307,14 +1319,159 @@
         bottom: -56px;
         transform: scale(.7);
     }
+
     .sec07 .slick-initialized .slick-slide {
         margin: 0 5px;
     }
+
     .sec07 .slick-slide img {
         max-width: 320px;
     }
 
     /* sec08 */
+    .sec08 .inner {
+        padding: 0;
+    }
+
+    .sec08 .top {
+        justify-content: space-between;
+        padding: 50px 10px 0;
+    }
+
+    .sec08 .top_l {
+        width: 360px;
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
+
+    .sec08 .top_l .ja {
+        padding: 13px 0px 0 70px;
+        font-size: 30px;
+        margin-right: 0;
+    }
+
+    .sec08 .top_l .ja::before {
+        left: -20px;
+        bottom: -55px;
+        transform: scale(.56);
+    }
+
+    .sec08 .top_l .ja>span {
+        margin: 0 0 0 -13px;
+        font-size: 30px;
+    }
+
+    .sec08 .top_l .ja>span:first-child {
+        margin-right: -12px;
+    }
+
+    .sec08 .top_l .content {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .sec08 .top_l .content::before {
+        right: -60px;
+        bottom: -80px;
+        transform: scale(.6);
+    }
+
+    .sec08 .top_l .content>span {
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+    }
+
+    .sec08 .top_l .dect {
+        right: 0;
+        left: 78px;
+        font-size: 10px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .sec08 .top_l .dect:before {
+        left: -115px;
+        top: -35px;
+        transform: scale(.8);
+    }
+
+    .sec08 .top_l .dect span {
+        margin-top: 106px;
+    }
+
+    .sec08 .top_r {
+        width: 35%;
+    }
+
+    .sec08 .top_r::before {
+        top: 19px;
+        right: -40px;
+        transform: scale(.8);
+    }
+
+    .sec08 .top_r::after {
+        bottom: 78px;
+        right: -174px;
+        transform: scale(0.5);
+    }
+
+    .sec08 .top_r .pic::before {
+        background-size: contain;
+        top: -90px;
+        right: 40px;
+    }
+
+    .sec08 .top_r .pic::after {
+        top: 15px;
+        left: -10px;
+        background-size: contain;
+        transform: scale(1.1);
+    }
+
+    .sec08 .bottom .info .box {
+        width: calc(50% - 5px);
+        height: 110px;
+    }
+
+    .sec08 .bottom .info .left {
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+
+    .sec08 .bottom .info .right {
+        margin-left: 0;
+    }
+
+    .sec08 .bottom .info .box::before {
+        font-size: 60px;
+    }
+
+    .sec08 .bottom .info .text {
+        font-size: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .sec08 .bottom .info .text::before {
+        top: -85px;
+        right: 9px;
+        transform: scale(.7);
+    }
+
+    .sec08 .bottom .info .box::after {
+        transform: scale(.6);
+    }
+
+    .sec08 .bottom .info .box.left::after {
+        right: -20px;
+        bottom: -44px;
+    }
+
+    .sec08 .bottom .info .box.right::after {
+        right: -20px;
+        bottom: -45px;
+    }
 
     /*============ FOOTER ============*/
     .sec11 .inner {
@@ -1593,6 +1750,60 @@
 }
 
 
+@media screen and (min-width: 441px) and (max-width: 560px) {
+    .sec08 .top_r::before {
+        top: 20px;
+        right: -100px;
+        transform: scale(.7);
+    }
+
+    .sec08 .top_r::after {
+        bottom: 171px;
+        right: -273px;
+        transform: scale(0.2);
+    }
+
+    .sec08 .top_r .pic::before {
+        top: -120px;
+        right: -6px;
+        max-width: 300px;
+        min-width: 105px;
+    }
+
+    .sec08 .top_r .pic::after {
+        top: -40px;
+        left: unset;
+        right: -7px;
+        background-size: contain;
+        min-width: 105px;
+        max-width: 300px;
+    }
+
+    .sec08 .bottom .info .box {
+        padding-left: 10px;
+    }
+
+    .sec08 .bottom .info .text {
+        line-height: 1em;
+    }
+
+    .sec08 .bottom .info .box::before {
+        font-size: 50px;
+        left: 5px;
+        top: -22px
+    }
+
+    .sec08 .bottom .info .text::before {
+        top: -78px;
+        right: 15px;
+        transform: scale(.6);
+    }
+
+    .sec08 .bottom .info .box::after {
+        transform: scale(.5);
+    }
+
+}
 
 /* screen-max:460px */
 @media screen and (max-width: 440px) {
@@ -1640,6 +1851,98 @@
 
     .sec05 .block .ja.dif::after {
         right: -34px;
+    }
+
+    .sec08 .top {
+        padding: 50px 0 0 0;
+        flex-direction: column;
+    }
+
+    .sec08 .top_l .dect:before {
+        left: -20px;
+        top: -60px;
+        transform: scale(.8);
+    }
+
+    .sec08 .top_l .dect {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+
+    .sec08 .top_l .dect span {
+        width: 100%;
+        margin-top: 192px;
+    }
+
+    .sec08 .top_r {
+        width: 100%;
+        height: 500px;
+        margin-top: 70px;
+    }
+
+    .sec08 .top_r::before {
+        top: -30px;
+        right: -15px;
+    }
+
+    .sec08 .top_r::after {
+        bottom: 97px;
+        right: -184px;
+    }
+
+    .sec08 .top_r .pic::before {
+        top: -100px;
+        right: 0;
+        transform: scale(.9);
+        background-size: contain;
+    }
+
+    .sec08 .top_r .pic::after {
+        top: 30px;
+        left: 0px;
+        background-size: contain;
+        transform: scale(.98);
+    }
+
+    .sec08 .bottom .info {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 70px;
+    }
+    
+
+    .sec08 .bottom .info .box {
+        width: 310px;
+        height: 80px;
+        padding-left: 10px;
+    }
+
+    .sec08 .bottom .info .box::before {
+        left: 20px;
+        top: -25px;
+    }
+
+    .sec08 .bottom .info .text::before {
+        transform: scale(.6);
+        top: -65px;
+    }
+
+    .sec08 .bottom .info .box::after {
+        transform: scale(.4);
+    }
+
+    .sec08 .bottom .info .box.left::after {
+        right: -49px;
+        bottom: -63px;
+    }
+
+    .sec08 .bottom .info .box.right::after {
+        right: -36px;
+        bottom: -60px;
     }
 
 

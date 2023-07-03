@@ -2167,14 +2167,12 @@ section {
 }
 
 .sec08 .bottom .info .box.right::after {
+  content: url(../images/sec08_item02.png);
   right: 21px;
   bottom: -5px;
 }
 
 
-.sec08 .bottom .info .box:last-child:after {
-  content: url(../images/sec08_item02.png);
-}
 
 .sec08 .bottom .info .left {
   margin-right: 20px;
