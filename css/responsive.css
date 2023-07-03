@@ -22,7 +22,7 @@
     nav {
         display: none;
         position: fixed;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background: rgb(255 255 255 / 80%);
         top: 0;
@@ -34,6 +34,7 @@
         max-width: 1920px;
         margin: 0 auto;
         position: relative;
+        height: 100%;
     }
 
     nav .nav_block {
@@ -76,7 +77,7 @@
     .nav_list {
         flex-direction: column;
         align-items: flex-start;
-        height: calc(100vh - 130px);
+         height: calc(100% - 130px);
         overflow-y: auto;
         overflow-x: hidden;
         margin-top: 130px;
@@ -193,6 +194,7 @@
         position: absolute;
         right: 12px;
     }
+
 
     /* sec 06 */
     .sec06 .block.block02 {
@@ -311,17 +313,11 @@
     }
 
     .nav_list {
-        height: calc(100vh - 145px);
+        height: calc(100% - 130px);
         margin-top: 145px;
         right: 0;
 
     }
-
-    .nav_list .dropdownlink,
-    .nav_list .sub a {
-        height: 60px;
-    }
-
 
     .parent:last-child .sub {
         transform: translate(-42%, 0);
@@ -424,7 +420,7 @@
         top: -60px;
     }
 
-    .sec04 .slick-center {
+    .sec04 .slick-initialized .slick-active {
         transform: scale(.9);
     }
 
@@ -1005,22 +1001,7 @@
         padding-top: 40px;
     }
 
-    .sec04 .title .ja::before {
-        top: 50px;
-        transform: scale(.7);
-    }
 
-    .sec04 .slick-slide {
-        transition: all 0.4s ease-in-out;
-        transform: scale(.6);
-    }
-
-    .sec04 .slick-initialized .slick-active {
-        transition: all 0.4s ease-in-out;
-        display: flex;
-        justify-content: center;
-        transform: scale(1);
-    }
 
     .sec04 .slider {
         top: -5px;
@@ -1031,6 +1012,8 @@
         max-width: 450px;
         padding: 45px 20px 65px 24px;
         margin: 0;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .sec04 .item .top {
@@ -1283,6 +1266,19 @@
     .sec06 .bottom {
         writing-mode: vertical-lr;
         font-size: 35px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        box-sizing: border-box;
+        max-height: 100%;
+        vertical-align: middle;
+    }
+    .sec06 .top {
+        line-height: 4em;
+    }
+    .sec06 .bottom {
+        line-height: 2.7em;
     }
 
     .sec06 .bottom>span {
@@ -1920,6 +1916,11 @@
         padding: 50px 0 0 0;
         flex-direction: column;
     }
+    .sec08 .top_l {
+        width: 100%;
+        align-items: center;
+        flex-shrink: 0;
+    }
 
     .sec08 .top_l .dect:before {
         left: -20px;
@@ -1930,7 +1931,7 @@
     .sec08 .top_l .dect {
         font-size: 12px;
         width: 100%;
-        text-align: left;
+        text-align: center;
         right: 0;
         left: 20px;
     }
@@ -2036,4 +2037,14 @@
 }
 
 /* screen-max: 360px */
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {
+    .sec04 .item .pic {
+        width: 300px;
+    }
+    .sec11 .right .info {
+        font-size: 16px;
+    }
+    .sec11 .right .info>span {
+        font-size: 20px;
+    }
+}

@@ -32,7 +32,7 @@ $(window).bind('load', function () {
 
   $('.sec04 .slider').slick({
     centerMode: true,
-    centerPadding: '17%',
+    centerPadding: '22%',
     slidesToShow: 1,
     infinite: true,
     draggable: false,
@@ -47,7 +47,7 @@ $(window).bind('load', function () {
         }
       },
       {
-        breakpoint: 750,
+        breakpoint: 751,
         settings: {
           centerPadding: '0',
           arrows: false,

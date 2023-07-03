@@ -1280,6 +1280,22 @@ section {
   justify-content: center;
   align-items: center;
 }
+.sec04 .title .ja::before {
+  top: 50px;
+  transform: scale(.7);
+}
+
+.sec04 .slick-slide {
+  transition: all 0.4s ease-in-out;
+  transform: scale(.6);
+}
+
+.sec04 .slick-initialized .slick-active {
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  transform: scale(1);
+}
 
 
 .sec04 .list {
