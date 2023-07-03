@@ -447,6 +447,8 @@
     }
 
 
+
+
     .sec05 ul li a .pic {
         width: 370px;
     }
@@ -1184,6 +1186,25 @@
         right: -90px;
         bottom: -62px;
         transform: scale(.7);
+    }
+    .sec05 .content::before,
+    .sec05 .content::after{
+        content: "";
+        width: 150px;
+        top: 0;
+        height: 150px;
+    }
+    .sec05 .content::before
+     {
+        background: url(../images/sec05_img01.png) no-repeat;
+        background-size: contain;
+
+        left: 0;
+     }
+    .sec05 .content::after{
+        background: url(../images/sec05_img02.png) no-repeat;
+        right: 0;
+        background-size: auto;
     }
 
     .sec05 ul {
