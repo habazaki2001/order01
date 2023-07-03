@@ -813,7 +813,8 @@ main {
   color: var(--scolor);
   font-size: 14px;
 }
-.mv_txt .mv_txt_link .ja{
+
+.mv_txt .mv_txt_link .ja {
   width: 210px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -822,9 +823,11 @@ main {
   line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.mv_txt .mv_txt_link .ja:hover{
+
+.mv_txt .mv_txt_link .ja:hover {
   text-decoration: underline;
 }
+
 @keyframes zoomImg {
   0% {
     transform: scale(1.2)
@@ -1067,9 +1070,9 @@ section {
 }
 
 .sec02 .inner {
-   background: url(../images/sec02_img02.png) center no-repeat ;
-    background-position-x: calc(85% + 5px);
-    background-position-y: 21px;
+  background: url(../images/sec02_img02.png) center no-repeat;
+  background-position-x: calc(85% + 5px);
+  background-position-y: 21px;
 }
 
 .sec02 .inner::before {
@@ -1227,7 +1230,7 @@ section {
 }
 
 .sec04_content,
-.sec05 .content, 
+.sec05 .content,
 .sec07_content {
   max-width: 1920px;
   margin: 0 auto;
@@ -1531,6 +1534,7 @@ section {
   padding-bottom: 59px;
   position: relative;
 }
+
 .sec05 .content::before,
 .sec05 .content::after {
   position: absolute;
@@ -1774,10 +1778,7 @@ section {
 }
 
 
-.sec06 .block.block02 {
-  flex-direction: row-reverse;
-  justify-content: end;
-}
+
 
 .sec06 .block .pic {
   width: 272px;
@@ -1798,6 +1799,7 @@ section {
   background-position-x: -105px;
 }
 
+
 .sec06 .title {
   width: calc(100% - 136px);
   background-color: var(--mcolor);
@@ -1814,15 +1816,11 @@ section {
 
 .sec06 .block.block02 .title {
   background-color: var(--blue);
-  left: -1px;
-  right: 0;
-  top: 18px;
   box-shadow: 5px 6px 0 rgb(68 60 53 / 10%);
-  padding: 6px 0px 6px 56px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  transition: all cubic-bezier(0, 0, 0.2, 1) 0.3s;
 }
+
 
 
 .sec06 .title::after {
@@ -1834,10 +1832,7 @@ section {
   width: 28px;
 }
 
-.sec06 .block.block02 .title::after {
-  left: 13px;
-  right: 0;
-}
+
 
 .sec06 .content {
   display: flex;
@@ -1848,11 +1843,6 @@ section {
   padding-left: 184px;
 }
 
-.sec06 .block.block02 .content {
-  align-items: end;
-  padding-right: 171px;
-  padding-left: 0;
-}
 
 .sec06 .content::before {
   content: "";
@@ -1865,11 +1855,7 @@ section {
 }
 
 .sec06 .block.block02 .content::before {
-  content: "";
   background: url(../images/sec06_img03_1.png) left no-repeat;
-  left: 40px;
-  right: 0;
-  bottom: -9px;
 }
 
 .sec06 .top {
@@ -1885,14 +1871,6 @@ section {
   text-shadow: rgb(255, 255, 255) 4px 0px 0px, rgb(255, 255, 255) 3.87565px 0.989616px 0px, rgb(255, 255, 255) 3.51033px 1.9177px 0px, rgb(255, 255, 255) 2.92676px 2.72656px 0px, rgb(255, 255, 255) 2.16121px 3.36588px 0px, rgb(255, 255, 255) 1.26129px 3.79594px 0px, rgb(255, 255, 255) 0.282949px 3.98998px 0px, rgb(255, 255, 255) -0.712984px 3.93594px 0px, rgb(255, 255, 255) -1.66459px 3.63719px 0px, rgb(255, 255, 255) -2.51269px 3.11229px 0px, rgb(255, 255, 255) -3.20457px 2.39389px 0px, rgb(255, 255, 255) -3.69721px 1.52664px 0px, rgb(255, 255, 255) -3.95997px 0.56448px 0px, rgb(255, 255, 255) -3.97652px -0.432781px 0px, rgb(255, 255, 255) -3.74583px -1.40313px 0px, rgb(255, 255, 255) -3.28224px -2.28625px 0px, rgb(255, 255, 255) -2.61457px -3.02721px 0px, rgb(255, 255, 255) -1.78435px -3.57996px 0px, rgb(255, 255, 255) -0.843183px -3.91012px 0px, rgb(255, 255, 255) 0.150409px -3.99717px 0px, rgb(255, 255, 255) 1.13465px -3.8357px 0px, rgb(255, 255, 255) 2.04834px -3.43574px 0px, rgb(255, 255, 255) 2.83468px -2.82216px 0px, rgb(255, 255, 255) 3.44477px -2.03312px 0px, rgb(255, 255, 255) 3.84068px -1.11766px 0px, rgb(255, 255, 255) 3.9978px -0.132717px 0px;
 }
 
-.sec06 .block.block02 .top {
-  right: -9px;
-  left: unset;
-}
-
-.sec06 .block.block02 .top>span {
-  margin-right: -10px;
-}
 
 .sec06 .bottom {
   font-size: 44px;
@@ -1977,7 +1955,7 @@ section {
   font-size: 80px;
 }
 
-.sec07 .title  img {
+.sec07 .title img {
   margin-right: 15px;
 }
 
@@ -2644,6 +2622,7 @@ footer {
   width: 100%;
   padding-top: 0px;
 }
+
 .ft_link .list .title {
   text-align: left;
   margin-bottom: 29px;
@@ -2696,8 +2675,8 @@ footer {
 }
 
 .ft_link ul li>a:hover {
-  text-decoration: underline ;
-  color: var(--txt) ;
+  text-decoration: underline;
+  color: var(--txt);
 }
 
 .ft_img {
