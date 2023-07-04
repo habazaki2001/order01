@@ -50,28 +50,33 @@ $(window).bind('load', function () {
         breakpoint: 751,
         settings: {
           centerPadding: '0',
-          arrows: false,
+          arrows: true,
           centerMode: false,
-          Swipe: true,
           slidesToShow: 1,
-          speed: 1000,
-          autoplay: true,
-          autoplaySpeed: 6000,
-          pauseOnFocus: true
+          // speed: 1000,
+          // autoplay: true,
+          // autoplaySpeed: 6000,
+          Swipe: false,
+          draggable: false,
+          focusOnSelect: false,
+          swipeToSlide: false
         }
       },
       {
         breakpoint: 480,
         settings: {
           centerPadding: '0',
-          arrows: false,
+          arrows: true,
           centerMode: false,
-          Swipe: true,
           slidesToShow: 1,
-          speed: 1000,
-          autoplay: true,
-          autoplaySpeed: 6000,
-          pauseOnFocus: true
+          // speed: 1000,
+          // autoplay: true,
+          // autoplaySpeed: 6000,
+          Swipe: false,
+          draggable: false,
+          focusOnSelect: false,
+          swipeToSlide: false
+
         }
       }
     ]
